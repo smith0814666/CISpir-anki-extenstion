@@ -18,6 +18,10 @@ When you use the AI features (translation, grammar analysis, word lookup, or vid
 
 The extension contains an optional, anonymous usage counter (Google Analytics 4). It is **disabled by default** and only activates if the publisher configures a measurement ID. When active, it sends only aggregate, non-personal events — such as install/update, daily active, and feature usage — using a randomly generated identifier with no fingerprinting, and never your subtitle text or account information.
 
+## Remote code
+
+CISpir does not load or execute any remotely hosted code. All extension code — the background service worker, side panel, settings page, and content scripts — is bundled inside the extension and runs locally on your device. Network requests only fetch data (text/JSON) from the AI provider you configure and, if enabled, the optional usage counter; that data is never executed as code.
+
 ## Third-party services
 
 CISpir does not integrate with any advertising or tracking services.
