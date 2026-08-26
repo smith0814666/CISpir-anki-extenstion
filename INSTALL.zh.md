@@ -2,6 +2,14 @@
 
 **CISpir** 是一款 Chrome 浏览器插件，可以将 YouTube 视频字幕一键保存为 Anki 学习卡片，支持音频抓取、AI 翻译、语法分析等功能，是语言学习者的利器。
 
+### 🚀 快速上手
+
+1. 安装 [Anki 桌面版](https://apps.ankiweb.net/)（电脑应用，不是网页版或手机版）
+2. 在 Anki 中安装 **AnkiConnect** 插件（代码 `2055492159`）
+3. 安装 **CISpir** 插件（加载 `dist` 文件夹）
+4. （可选）在设置中填入一个 **AI API 密钥**
+5. 打开 YouTube 视频 → 点 CISpir 图标 → 加载字幕 → 点 ☆ 存入 Anki
+
 ---
 
 ## 目录
@@ -320,6 +328,22 @@ CISpir 自动在 Anki 中创建名为 **「CISpir」** 的笔记类型，包含�
 | Source | 视频标题、链接和时间戳 |
 
 卡片采用**深色主题设计**，同时兼容 Anki 的日间模式。正面显示音频或句子（供你回忆），背面展示完整信息（翻译、词汇、语法、来源）。
+
+---
+
+## 💝 打赏支持
+
+CISpir 完全免费，所有功能均可免费使用。如果它帮到了你，欢迎自愿打赏支持持续维护——**打赏不会解锁任何功能，也不会限制任何功能**。
+
+在侧边栏顶部或设置页点击 **Support CISpir** 按钮即可打赏，支持三种渠道：
+
+| 微信 WeChat | 支付宝 Alipay |
+|:---:|:---:|
+| <img src="./assets/donation/wechat-qr.jpg" alt="微信打赏二维码" width="200"> | <img src="./assets/donation/alipay-qr.jpg" alt="支付宝打赏二维码" width="200"> |
+
+> **PayPay**：在 PayPay 中搜索 ID `milesmissyou` 转账（无二维码）。
+
+打赏在对应的 App 内完成，CISpir 无法读取支付信息，也不会向任何服务器上传设备数据。
 
 ---
 
