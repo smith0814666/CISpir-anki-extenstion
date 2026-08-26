@@ -36,12 +36,10 @@
 
 **Method B — Load unpacked (recommended now):**
 
-1. Download the ZIP from `github.com/smith0814666/CISpir-anki-extenstion`.
+1. Download the latest release ZIP from `github.com/smith0814666/CISpir-anki-extenstion/releases`.
 2. Unzip it.
 3. Go to `chrome://extensions/` → turn on **Developer mode**.
 4. Click **Load unpacked** → select the `dist` folder.
-
-**Method C — Build from source:** `git clone` → `npm install` → `npm run build` → load `dist`.
 
 📌 Pin the icon: puzzle icon → CISpir → 📌.
 
@@ -83,6 +81,7 @@ Choose one provider and paste the key in CISpir settings (gear icon → Save).
 |---|---|---|
 | Translate all | 🌐 | Batch-translate the subtitles |
 | Grammar analysis | 📖 | Break down grammar, add readings |
+| Extract chunks | 🔤 | Pull out learnable words & phrases, then save them to Anki |
 | Video summary | 📄 | Summary, key vocab, difficulty |
 
 ## Anki card fields
@@ -107,7 +106,7 @@ Payment happens in the selected app. CISpir cannot read payment information and 
 
 - **Anki ✗?** Is Anki running? AnkiConnect installed? Restarted Anki? Check `http://localhost:8765`.
 - **No captions?** Refresh the page; some videos block third-party access.
-- **No API key?** Captions, audio, and saving still work. Translation / grammar / summary don't.
+- **No API key?** Captions, audio, and saving still work. Translation / grammar / chunks / summary don't.
 - **Browsers?** Chrome / Edge / Brave / Arc ✅ · Firefox / Safari ❌.
 
 ## Support

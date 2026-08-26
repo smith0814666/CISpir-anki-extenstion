@@ -128,7 +128,7 @@ CISpir 即将上架 Google Chrome 应用商店（Chrome Web Store）。上架后
 
 安装完成后浏览器工具栏会自动出现 CISpir 图标，无需任何额外配置。后续插件更新也会自动推送，无需手动操作。
 
-> ⏳ 目前商店上架审核流程进行中。在上架完成前，请使用下面的方式二或方式三安装。
+> ⏳ 目前商店上架审核流程进行中。在上架完成前，请使用下面的方式二安装。
 
 ---
 
@@ -138,8 +138,8 @@ CISpir 即将上架 Google Chrome 应用商店（Chrome Web Store）。上架后
 
 首先你需要获取插件文件：
 
-1. 访问 [github.com/smith0814666/CISpir-anki-extenstion](https://github.com/smith0814666/CISpir-anki-extenstion)
-2. 点击绿色的 **Code** 按钮 → 选择 **Download ZIP**
+1. 访问 [github.com/smith0814666/CISpir-anki-extenstion/releases](https://github.com/smith0814666/CISpir-anki-extenstion/releases)
+2. 在最新版本（Latest）下，下载 **CISpir1.1.0.zip**
 3. 下载完成后，**解压 ZIP 文件**到你电脑上的任意位置（比如桌面）
 4. 确认解压后的文件夹里有 `dist` 这个子文件夹。
 
@@ -151,45 +151,6 @@ CISpir 即将上架 Google Chrome 应用商店（Chrome Web Store）。上架后
 8. 点击左上角的 **加载已解压的扩展程序**（Load unpacked）
 9. 在弹出的文件选择窗口中，找到刚才解压的文件夹，选择里面的 **`dist`** 子文件夹，点击「选择」
 10. 加载成功！浏览器工具栏右上角会出现 CISpir 的图标。
-
-### 方式三：从源码构建（需要 Node.js）
-
-如果你熟悉命令行工具，可以从源码构建：
-
-1. 安装 Node.js（如未安装）：
-   - 访问 **[https://nodejs.org/](https://nodejs.org/)**
-   - 下载 **LTS 版本**（长期支持版）
-   - 按照安装向导完成安装
-
-2. 打开终端（Terminal）或命令提示符（CMD），依次运行：
-
-   ```bash
-   # 克隆代码仓库
-   git clone https://github.com/smith0814666/CISpir-anki-extenstion.git
-
-   # 进入项目目录
-   cd CISpir-anki-extenstion
-
-   # 安装项目依赖
-   npm install
-
-   # 构建插件
-   npm run build
-   ```
-
-3. 构建完成后，终端会显示：
-
-   ```
-   ✓ manifest.json
-   ✓ icons
-   ✓ sidepanel/index.html
-   ✓ settings/index.html
-
-   ✅ Extension ready at dist/
-   → chrome://extensions → Developer mode → Load unpacked → select dist/
-   ```
-
-4. 然后按照方式一的第 5~10 步加载 `dist` 文件夹到浏览器。
 
 ### 固定图标到工具栏
 
@@ -307,6 +268,7 @@ CISpir 的核心使用流程非常简单：
 |------|------|------|
 | **全文翻译** | 🌐 | AI 批量翻译所有字幕行 |
 | **语法分析** | 📖 | 分析句子语法结构、标注假名/拼音、拆解成分 |
+| **语块分解** | 🔤 | 从句子中提取可学习的单词和短语（语块），附释义、读音、词性，可保存到 Anki |
 | **视频摘要** | 📄 | AI 生成视频内容摘要、提取关键词汇、评估难度级别 |
 
 ---
@@ -380,6 +342,7 @@ CISpir 会自动检测重复句子，避免同一句保存多次。这是正常�
 但以下功能不可用：
 - ❌ 句子翻译
 - ❌ 语法分析
+- ❌ 语块分解
 - ❌ 视频摘要
 - ❌ 选中单词的翻译弹窗
 
